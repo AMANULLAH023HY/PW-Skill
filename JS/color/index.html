@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change for Backgraound color</title>
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        button {
+
+            padding: 10px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+        }
+
+        #color {
+            margin-left: 10px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+    </style>
+
+
+    <button id="btn">Change Color</button>
+
+    <p id="color"></p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const color = document.getElementById("color")
+        const hexColor = () => {
+            let hex = "0123456789ABCDEF";
+            let cons = "#";
+            for (let i = 0; i < 6; i++) {
+                cons = cons + hex[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+
+        }
+        function changeColor() {
+            document.body.style.backgroundColor = hexColor();
+            color.textContent = hexColor();
+        }
+        btn.addEventListener("click", changeColor);
+    </script>
+
+</body>
+
+</html>

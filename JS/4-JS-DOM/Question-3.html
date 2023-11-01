@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+</head>
+
+<body>
+    <style>
+        body {
+            border: 3px solid black;
+            height: 300px;
+        }
+
+        div {
+            display: flex;
+        }
+
+        button {
+            width: 20px;
+            height: 20px;
+            margin: 20px;
+        }
+    </style>
+
+    <h1>Conter</h1>
+    <div>
+        <button onclick="decrement()">-</button>
+        <h2 id="valueChange">0</h2>
+        <button onclick="increment()">+</button>
+    </div>
+
+    <script>
+        const valueChange = document.getElementById("valueChange");
+        let number = 0;
+        function increment() {
+            valueChange.innerText = number++;
+        }
+
+        function decrement() {
+            if (number > 0) {
+                valueChange.innerText = number--;
+            }
+            else {
+                alert("Counter is going Beyond 0")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

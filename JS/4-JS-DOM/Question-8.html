@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-8</title>
+</head>
+
+<body>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #121050;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #time {
+            border: 2px solid white;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+
+    <div id="time">
+        <span id="hour">00</span>:
+        <span id="minute">00</span>:
+        <span id="second">00</span>
+    </div>
+
+
+    <script>
+        function updateTime() {
+
+            const currentTime = new Date();
+            const hours = currentTime.getHours().toString();
+            const minutes = currentTime.getMinutes().toString();
+            const seconds = currentTime.getSeconds().toString();
+            document.getElementById("hour").innerText = hours;
+            document.getElementById("minute").innerText = minutes;
+            document.getElementById("second").innerText = seconds;
+
+        }
+        setInterval(updateTime, 1000);
+    </script>
+
+
+
+</body>
+
+</html>

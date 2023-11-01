@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-5</title>
+</head>
+
+<body>
+    <style>
+        body {
+            height: 400px;
+            width: 100%;
+
+        }
+
+        img {
+            height: 400px;
+            width: 300px;
+        }
+    </style>
+    <div class="container">
+        <h1 id="text">Your Image Is visible</h1>
+        <button onclick="change()" id="btn">Toggle Theme</button><br>
+        <img src="./images/abc.jpeg" alt="" id="img">
+
+    </div>
+
+    <script>
+        const text = document.getElementById("text");
+        const image = document.getElementById("img");
+
+        function change() {
+            if (image.style.opacity == 0) {
+                image.style.opacity = 100;
+                text.innerHTML = "Your Image Is visible";
+
+            }
+            else {
+                image.style.opacity = 0;
+                text.innerHTML = "Your Image Is invisible";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px 500px 200px;
+    grid-template-rows: 100vh;
+    border: 2px solid black;
+}
+
+.item {
+    margin-top: 10px;
+}
+
+.item1 {
+    padding: 50px;
+
+}
+
+.item1 h1,
+p,
+.btn {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.item2 img {
+    height: 98vh;
+    width: 500px;
+
+}
+
+.item3 {
+    background-color: yellow;
+}

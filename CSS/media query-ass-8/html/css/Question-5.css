@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid black;
+    height: 80vh;
+    width: 100%;
+    margin-left: 100px;
+    display: flex;
+
+}
+
+img {
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.card,
+.card1,
+.card2 {
+    margin: 20px;
+}
+
+
+@media screen and (max-width:920px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1 {
+        visibility: hidden;
+    }
+
+    img {
+        height: 300px;
+        width: 500px;
+    }
+
+}

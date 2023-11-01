@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            height: 500px;
+            width: 400px;
+            padding-top: 5px; 
+            border-radius: 10px;
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+        h2{
+            text-align: center;
+            padding-top: 20px;
+        }
+        form{
+           background-color: white;
+           color: black;
+           height: 450px;
+           width: 300px;
+           margin-left: 50px;
+           border-radius: 10px;
+
+           
+        }
+        form label,span{
+            margin-left: 20px;
+            
+        }
+        form input,select{
+            height: 20px;
+            width: 270px;
+            margin-left: 20px;
+            
+            margin-bottom: 10px;
+        }
+
+        button {
+            /* margin-top: 10px; */
+            width: 270px;
+            height: 30px;
+            margin-left: 20px;
+
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <h2>SignUp Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" >
+           <span>Batch:</span> 
+            <select name="batch" id="batch">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="NODEJS">NODEJS</option>
+            </select><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

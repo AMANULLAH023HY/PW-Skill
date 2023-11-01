@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 100%;
+    border: 2px solid rgb(14, 14, 14);
+    align-items: flex-end;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    height: 300px;
+    width: 100%;
+    background-color: #070707;
+    color: white;
+    padding-top: 80px;
+
+}
+
+footer .card-1 .logo {
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer .card-1 .certificate {
+    height: 100px;
+    width: 200px;
+    margin: 30px 0;
+}
+
+
+.line {
+
+    width: 150px;
+    border: 1px solid rgb(243, 210, 128);
+    margin: 20px 0;
+}
+
+.line1 {
+
+    width: 150px;
+    border: 1px solid rgb(243, 210, 128);
+    margin: 20px 0;
+}
+
+footer .card-2 .flex {
+    display: flex;
+
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer .card-2 .left {
+    margin-left: 30px;
+}
+
+footer ul li {
+    padding-top: 15px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            border: 3px solid black;
+            height: 400px;
+            width: 900px;
+
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Upload Profile Picture</h1>
+        <input type="file" id="input" onchange="changePicture()">
+        <h2>Your Profile Picture</h2>
+        <img src="" alt="No profile picture" id="img">
+    </div>
+
+    <script>
+
+        let input = document.getElementById("input");
+        let img = document.getElementById("img");
+
+
+        function changePicture() {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
